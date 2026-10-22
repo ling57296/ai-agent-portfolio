@@ -1,4 +1,4 @@
-<h1 align="center">陈凌 (Chen Ling)</h1>
+<h1 align="center">陈凌 | AI Agent FDE</h1>
 
 <p align="center">
   <strong>AI Agent 架构师 / FDE（前沿部署工程师）</strong>
