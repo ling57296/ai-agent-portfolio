@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈凌 | AI Agent 架构师</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+        }
+        
+        .highlight-box strong {
+            color: var(--text-main);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 头部信息 -->
+        <header>
+            <h1>陈凌 (Chen Ling)</h1>
+            <div class="title">AI Agent 架构师 / FDE（前沿部署工程师）</div>
+            <div class="contact-info">
+                <span>上海 / 西安</span>
+                <span>|</span>
+                <a href="mailto:hi@chenlingai.bond">hi@chenlingai.bond</a>
+                <span>|</span>
+                <a href="https://gitee.com/lingerbanqin_0/job-agent-win" target="_blank">Gitee 开源作品 ↗</a>
+            </div>
+        </header>
+
+        <!-- 核心优势 -->
+        <section>
+            <h2>Profile</h2>
+            <div class="highlight-box">
+                <p><strong>10+ 年全栈研发 & 7 年外企售前（FDE）基因。</strong> 中科大计算机本科。深谙从“业务需求调研”到“0-1 技术方案落地”的完整闭环。</p>
+                <p>近 2 年专注 LLM 与 AI Agent 全栈落地，主导交付多个生产级智能体。精通 Python/FastAPI 与 Node.js，重度使用 Claude Code 等 AI 原生工具，具备跨语言全栈 0-1 过审上线能力。</p>
+            </div>
+        </section>
+
+        <!-- 核心项目 -->
+        <section>
+            <h2>Selected Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- 项目 1：双核数字分身 -->
+                <div class="project-card">
+                    <h3>双核数字分身 Agent（悟修 & 齐家）</h3>
+                    <p><strong>认知执行双核架构。</strong> 打破传统 Chatbot 与自动化工作流的壁垒。悟修（左脑）负责吸收长周期知识（论文/洞察），沉淀 LLM Wiki；齐家（右脑）通过底层驱动与音频桥接，介入微信/WhatsApp 通话，处理短周期物理交互与商务决断。实现了“人类负责决策，Agent 负责执行与记忆”的共生闭环。</p>
+                    <div class="tags">
+                        <span class="tag">认知执行双核</span>
+                        <span class="tag">全栈伴随式</span>
+                        <span class="tag">OS 级物理桥接</span>
+                        <span class="tag">LLM Wiki</span>
+                    </div>
+                </div>
+
+                <!-- 项目 2：医疗 RAG -->
+                <div class="project-card">
+                    <h3>医疗 RAG 合规助手 & DPO 偏好对齐</h3>
+                    <p><strong>面向强监管行业的 Agent 落地。</strong> 0-1 基于 Qwen2.5 及 BGE 模型完成 LoRA/DPO 微调。实现警告前置 100% 成功率，强制携带 source 溯源，极大降低大模型幻觉。验证了“DPO 管行为、RAG 管知识”的系统分层架构。</p>
+                    <div class="tags">
+                        <span class="tag">DPO / LoRA</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">强制溯源</span>
+                        <span class="tag">合规拦截</span>
+                    </div>
+                </div>
+
+                <!-- 项目 3：企微智能体 -->
+                <div class="project-card">
+                    <h3>企业微信智能体 · 三层知识架构</h3>
+                    <p><strong>生产级 Multi-Agent 应用。</strong> 0-1 搭建意图路由与双路检索融合，解决“同一问题不同来源答案不一致”痛点。通过异步推送重构，成功破解企业微信 5 秒超时限制，保障高并发下的系统稳定性。</p>
+                    <div class="tags">
+                        <span class="tag">LangGraph</span>
+                        <span class="tag">Qdrant</span>
+                        <span class="tag">异步架构</span>
+                        <span class="tag">Function Calling</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 职业经历高光 -->
+        <section>
+            <h2>Experience Highlights</h2>
+            <div class="highlight-box" style="border-left-color: #64748b;">
+                <p><strong>惠普（HP）亚太区售前架构师：</strong> 7 年外企 FDE 经验。主导香港 HGC 百万美元级电信自动化升级项目，独立完成 POC 设计至最终交付全流程。</p>
+                <p><strong>斑马网络（高级软件工程师）：</strong> 参与 API 网关（Spring Cloud/Dubbo）研发，负责中石油加油卡系统（月流水过千万）及钉钉业务查询机器人。</p>
+                <p><strong>技术栈：</strong> Python / FastAPI / LangGraph / RAG / MCP / DPO / Docker / Node.js / Java / R / Go</p>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+            <p>© 2026 Chen Ling. Built with pure HTML & CSS. Hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
